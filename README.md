@@ -18,7 +18,7 @@ Then go to **config/db.js** and edit the params `(user, password and database)`.
 
 ### Running the App ###
 
-Once setting and configuring DB, simply run 
+Once setting and configuring DB, simply run
 
 > npm install && npm start
 
@@ -45,3 +45,10 @@ Shortened URLs are of the format **http://localhost:3000/r/5**
 > POST http://localhost:3000/delete
 > { "shortUrls" : ["http://localhost:3000/r/5"] }
 
+### Pre Requisites ###
+
+Some unit test cases are also written using **supertest**
+
+You can trigger them by
+
+> mocha test/api.js
